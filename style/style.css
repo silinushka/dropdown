@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.item {
+    float: left;
+    position: relative;
+}
+
+.link {
+    background-color: rgb(42, 42, 46);
+    display: block;
+    padding:  20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+    text-transform: uppercase;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.link-drop {
+    background-color: rgb(44, 111, 255);
+    display: block;
+    padding:  20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+}
+
+.list-drop {
+    display: none;
+    left: 0;
+}
+
+.item-drop {
+    position: relative;
+}
+
+.item:hover .link {
+    background-color: rgb(44, 111, 255);
+    color: white;
+}
+
+.item:hover .list-drop {
+    display: block;
+}
+
+.list-second-drop {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+.item-drop:hover .list-second-drop {
+    display: block;
+}
